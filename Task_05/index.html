@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #cdcdcd;
+        }
+
+        /*   Navigation   */
+        .navigation {
+            width: 100%;
+            height: 80px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .logo {
+            margin-left: 80px;
+            font-size: 36px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 50px;
+            font-size: 24px;
+        }
+
+        .contact {
+            font-size: 24px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #E96479;
+
+        }
+
+        .contact:hover {
+            color: #fff;
+            background: #E96479;
+            transition: .8s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+        }
+
+        /*   Home Page   */
+        .home_page {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .home_head {
+            font-size: 55px;
+            margin-top: 250px;
+            margin-left: 150px;
+        }
+
+        .home_image {
+            width: 500px;
+            height: 500px;
+            margin: 200px 150px;
+
+        }
+
+        .explore,
+        .about_btn {
+            width: 150px;
+            height: 50px;
+            margin-top: 100px;
+            margin-left: 50px;
+            font-size: 16px;
+            background: #06e24f;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+        }
+
+        /*  About Page */
+
+        .about {
+            width: 100%;
+            height: 100vh;
+            margin-top: 100px;
+
+        }
+
+        .about_head {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about_img {
+            width: 100%;
+        }
+
+        .about_para {
+            margin: 20px 150px;
+            font-size: 20px;
+            text-align: justify;
+            color: #333;
+        }
+
+        /*   History Page */
+        .history {
+            width: 100%;
+            height: 100vh;
+            margin-top: 100px;
+
+        }
+
+        .history_head {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .history_img {
+            width: 100%;
+        }
+
+        .history_para {
+            margin: 20px 150px;
+            font-size: 20px;
+            text-align: justify;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navigation">
+        <h1 class="logo"><a href="#">Motihari</a></h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#">Tourism</a></li>
+            <li><a href="./contact.html"><button class="contact">Contact Us</button></a></li>
+        </ul>
+    </section>
+
+    <section class="home_page" id="home">
+        <h1 class="home_head">Welcome To <br> The City of Styagarah <br> <button class="explore">Explore</button>
+            <button class="about_btn"><a href="#about">About us</a></button>
+        </h1>
+        <img class="home_image" src="Image/img-1.png" alt="motihari">
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="about_head">About Distric</h1>
+        <img class="about_img" src="Image/collecteriate.jpg" alt="collecteriate">
+        <p class="about_para">First Creation of Champarn District : 1866 On 2nd November 1972 Champaran district was
+            split up Into two districts, viz. Purbi Champaran and Paschim Champaran. East Champaran is a part of Tirhut
+            Division. The headquarter of Purbi Champaran district is at Motihari .Presently Purbi Champaran consists of
+            Six Subdivisions and Twenty Seven Blocks. Nepal makes its northern boundary, Sitamadhi and Sheohar eastern
+            while Muzaffarpur South and with part of Gopalganj bounds it in western side. The name Champaran owes its
+            origin to Champa-aranya or Champkatanys. Champa or Champaka means Magnolia and aranya mess forest. Hence,
+            Champaranya means Forest of Magnolia (CHAMPA) trees. It is popularly believed that the nomenclature here was
+            made while the vest forest part was inhabited by solitary ascetics. It is needless to say that has Purbi
+            means Eastern Side.
+
+        </p>
+    </section>
+
+    <section class="history" id="history">
+        <h1 class="history_head">History</h1>
+        <img src="Image/motihari-stn-header.jpg" alt="Motihari station" class="history_img">
+        <p class="history_para">From epic time till today, the history of Champaran has been glorious and important. It
+            is mentioned in the Purana that the devotee Dhruv, son of King Uttanapada, here had done terrible penance
+            for attaining knowledge at the place called Tapovan. On the one hand, the land of Champaran is sacred due to
+            the Goddess of Sita, on the other hand, the Satyagraha of Gandhiji in modern India is an invaluable page in
+            the history of Indian independence. At the time of King Janak, this was part of the Tirahut kingdom. People
+            believe that Jankigharh, also known as Chanchigarh, was the capital of King Janak’s Veeveda state. Which
+            later became part of the Vaishali empire in the 6th century BC. Lord Buddha had given his sermons here, in
+            memory of which in the 3rd century BC, Priyadarshi Ashok made pillars and constructed stupas. After the
+            decline of the Gupta Dynasty and the Pala Dynasty, the entire Champaran region, including Mithila, became
+            subject to the Karnat dynasty. Local satraps were directly ruled by Muslims until and after this. Mahatma
+            Gandhi came to Motihari in April 1917 on the call of Prince Shukla, a rayat of freedom and freedom fighter
+            of India during the freedom struggle, and successfully used the first successful experiment of Satyagraha in
+            protest of the three acrimonious cultivation of the Nil crop. This was the beginning of the new phase in the
+            fight for independence. Later, Bapu came here many times. The British had made Champaran an independent unit
+            in 1866, but in 1971 it was divided into Eastern and Western Champaran</p>
+    </section>
+
+</body>
+
+</html>

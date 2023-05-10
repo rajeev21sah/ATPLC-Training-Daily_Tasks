@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .outer_box {
+            width: 100%;
+            height: 100vh;
+            background: radial-gradient(#ffcee6, #fcbcd7, #f9a3cb, #ef87be, #e56ab3);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner_box {
+            width: 600px;
+            height: 500px;
+            background: #ffffff10;
+            z-index: 2;
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            border: none;
+            background: rgb(255, 255, 255);
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .submit {
+            font-size: 1.3em;
+            background: rgb(114, 136, 219);
+            filter: blur(.5px);
+            transition: .5s;
+        }
+
+        .submit:hover {
+            filter: blur(0px);
+            background: rgb(22, 65, 220);
+            color: #fff;
+            transition: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="outer_box">
+        <section class="inner_box">
+
+            <head>
+                <h1>Contact Us</h1>
+            </head>
+            <main>
+                <form action="#">
+                    <label for="full_name">Full Name </label><br>
+                    <input type="text" name="full_name" id="full_name"><br>
+                    <label for="email">Your Email</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="mobile">Mobile Number</label><br>
+                    <input type="number" name="numbeer" id="mobile"><br>
+                    <label for="message">Any Message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </main>
+        </section>
+    </section>
+</body>
+
+</html>

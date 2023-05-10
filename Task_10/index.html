@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .outer_box {
+            width: 100%;
+            height: 100vh;
+            background-image: url(Image/pic_1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .inner_box {
+            width: 42%;
+            padding: 20px 40px;
+            border-radius: 10px;
+            background-color: rgba(240, 248, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 10px;
+            color: #111;
+        }
+
+        .data_1 {
+            width: 100%;
+            margin: 10px auto;
+            padding: 5px 5px;
+        }
+
+        .data_2 {
+            width: 100%;
+            margin: 10px auto;
+            padding: 5px 5px;
+        }
+
+        .data_3 {
+            width: 100%;
+            margin: 10px auto;
+            padding: 5px 5px;
+        }
+
+        .gender {
+            width: 100%;
+            margin: 10px auto;
+        }
+
+        .education {
+            margin: 10px auto;
+        }
+
+        .behavier {
+            margin: 10px auto;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .submit_reset {
+            margin: 10px auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .submit {
+            width: 40%;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #ec5a5a;
+            border: none;
+            transition: .5s;
+
+        }
+
+        .submit:hover {
+            background: #e11d1d;
+            color: #fff;
+            transition: .5s;
+        }
+
+        .reset {
+            width: 40%;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #4b89da;
+            border: none;
+            transition: .5s;
+        }
+
+        .reset:hover {
+            background: #176fe1;
+            color: #fff;
+            transition: .5s;
+        }
+
+        .radio,
+        .checkbox {
+            margin: 0 5px;
+        }
+
+        .like {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer_box">
+        <div class="inner_box">
+            <h1>Basic Information</h1>
+            <form action="#">
+                <p class="full_name">
+                    <label for="full_name">Your Name</label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter Your Full Name"
+                        class="data_1">
+                </p>
+                <p class="mobile_no">
+                    <label for="mobile_no">Mobile Number</label>
+                    <input type="number" name="mobile_no" id="mobile_no" placeholder="Example +9197087613**"
+                        class="data_2">
+                </p>
+                <p class="email">
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" class="data_3">
+                </p>
+                <p class="gender">
+                    <label>Gender : </label>
+                    <input type="radio" name="gender" id="male" class="radio"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" class="radio"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" class="radio"><label for="other">Other</label>
+                </p>
+                <p class="education">
+                    <label>Education Done : </label>
+                    <input type="checkbox" name="education" id="10th" value="10th" class="checkbox"><label
+                        for="10th">10th Pass</label>
+                    <input type="checkbox" name="education" id="12th" value="12th" class="checkbox"><label
+                        for="12th">12th Pass</label>
+                    <input type="checkbox" name="education" id="graduated" value="graduated" class="checkbox"><label
+                        for="graduated">Graduated</label>
+                    <input type="checkbox" name="education" id="post-graduated" value="post-graduated"
+                        class="checkbox"><label for="post-graduated">Post-Graduated</label>
+                </p>
+                <p class="behavier">
+                    <label class="like">Do you like tea : </label>
+                    <select name="like">
+                        <option value="none" selected>---Select---</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe">If the tea is well made</option>
+                    </select>
+                </p>
+                <p class="submit_reset">
+                    <input type="submit" value="Submit" class="submit"> <input type="reset" value="Reset" class="reset">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
