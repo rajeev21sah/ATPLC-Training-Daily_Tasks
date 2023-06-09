@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        img {
+            width: 150px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: rgb(169, 245, 246);
+            background: linear-gradient(90deg, rgba(169, 245, 246, 1) 0%, rgba(213, 206, 190, 1) 100%);
+        }
+
+        .timeline ul li {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 40%;
+            margin-top: 0px;
+            background: linear-gradient(135deg, rgba(255, 254, 254, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.384);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.331);
+
+        }
+
+        .timeline:before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 300%;
+            background: #843434;
+            left: 50%;
+        }
+
+        .timeline ul li:nth-child(2n+1) {
+            display: flex;
+            justify-content: right;
+            text-align: left;
+            clear: both;
+            animation: fromRight 2s ease;
+        }
+
+        .timeline ul li:nth-child(2n) {
+            display: flex;
+            justify-content: left;
+            text-align: right;
+            clear: both;
+            animation: fromLeft 2s ease;
+        }
+
+        @keyframes fromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+
+        }
+
+        @keyframes fromRight {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+
+        }
+
+        .pic_1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .para_1 {
+            margin: 30px;
+            font-size: 1em;
+
+        }
+
+        .heading {
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading">About Us</p>
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="card card_1">
+                    <div class="pic_1">
+                        <img src="Image/pic_1.jpg" alt="pic_1">
+                    </div>
+                    <div class="para_1">
+                        <p>We are a team of fashion enthusiasts who believe that every occasion deserves the perfect
+                            outfit, without the need to break the bank or contribute to fast fashion. Our mission is to
+                            provide a sustainable and affordable solution to your wardrobe needs.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card_2">
+                    <div class="pic_1">
+                        <img src="Image/pic_2.jpg" alt="pic_2">
+                    </div>
+                    <div class="para_1">
+                        <p>Our collection includes a wide range of outfits for different occasions, from elegant dresses
+                            to casual tops and pants. We work with a variety of designers and brands to ensure that our
+                            inventory is always up-to-date with the latest fashion trends.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card_3">
+                    <div class="pic_1">
+                        <img src="Image/pic_3.jpg" alt="pic_3">
+                    </div>
+                    <div class="para_1">
+                        <p>Renting from us is simple and convenient. All you need to do is browse our website, select
+                            the item(s) you wish to rent, choose your rental period, and check out. We will handle the
+                            shipping and cleaning of the clothes, so all you need to worry about is looking your best.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card_4">
+                    <div class="pic_1">
+                        <img src="Image/pic_4.jpg" alt="pic_4">
+                    </div>
+                    <div class="para_1">
+                        <p>Our rental prices are affordable, and we offer discounts for long-term rentals. We also offer
+                            a range of accessories to complement your outfit, such as jewelry, bags, and shoes.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card_5">
+                    <div class="pic_1">
+                        <img src="Image/pic_5.jpg" alt="pic_5">
+                    </div>
+                    <div class="para_1">
+                        <p>At our cloth rental website, we are committed to sustainability and reducing waste in the
+                            fashion industry. By renting from us, you can contribute to a more sustainable future while
+                            still looking fabulous.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card_6">
+                    <div class="pic_1">
+                        <img src="Image/pic_6.jpg" alt="pic_6">
+                    </div>
+                    <div class="para_1">
+                        <p>Thank you for choosing us as your go-to cloth rental website. We hope to make your next
+                            outfit rental experience a memorable one.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div style="clear: both;"></div>
+
+        </ul>
+    </div>
+</body>
+
+</html>

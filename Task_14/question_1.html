@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!Doctype html>
+
 <html>
 
 <head>
-    <title>Task_14</title>
-    <script>
-        var name = prompt("Enter your name");
-        var address = prompt("Enter your address");
+    <title> Task-14.1 </title>
 
-        document.write(" Name = " + name);
-        document.write("<br>");
-        document.write("Address = " + address);
-    </script>
 </head>
 
 <body>
+    <script>
+
+        function filterNegativeNumbers(numbers) {
+            return numbers.filter(function (number) {
+                return number >= 0;
+            });
+        }
+
+        let numbers = prompt("Enter the number of array seprated by commas").split(',');
+        const num = filterNegativeNumbers(numbers);
+        console.log(num);
+
+    </script>
+
 
 </body>
 

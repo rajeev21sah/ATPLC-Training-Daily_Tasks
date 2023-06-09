@@ -1,22 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+
+<html>
 
 <head>
-    <title>Task_14</title>
-    <script>
-        var x = prompt("Enter Somthing.");
-        var y = prompt("Enter again somthing.");
-        if (x === y) {
-            document.write("You enter same data and same datatype.");
-        }
-        else {
-            document.write("You enter either different data or different data typa.")
-        }
-    </script>
+    <title> Task-14.2 </title>
+
 </head>
 
 <body>
+    <script>
 
+        function diffFrom13(num) {
+            if (num <= 13) {
+                return 13 - num;
+            } else {
+                return (num - 13) * 2;
+            }
+        }
+
+        let num = prompt("Enter a number");
+        const diff = diffFrom13(num);
+
+        console.log(diff);
+    </script>
 </body>
 
 </html>

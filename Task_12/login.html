@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eec0c6;
+            background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+
+        }
+
+        .login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            /*background-color: #fff;
+            background: url(Image/8bbeaf67-9443-42cc-bbdf-0265ca112f8c.png);
+            background-size: cover;*/
+            width: 1000px;
+            height: 500px;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+        }
+
+        .img {
+            width: 50%;
+            background: #bf4c4c;
+        }
+
+        .form_box {
+            width: 50%;
+        }
+
+        .form input {
+            font-family: sans-serif;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f2f2f2;
+            outline: none;
+        }
+
+        .form button {
+            font-family: sans-serif;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form button:hover {
+            background-color: #3e8e41;
+        }
+
+        .form .message {
+            font-family: sans-serif;
+            margin: 15px 0 0;
+            color: #b3b3b3;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .form .message a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .form .message a:hover {
+            text-decoration: underline;
+        }
+
+        .img,
+        img {
+            opacity: .8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <div class="img">
+                <img width="100%" height="100%" src="Image/8bbeaf67-9443-42cc-bbdf-0265ca112f8c.png" alt="">
+            </div>
+            <div class="form_box">
+                <form class="login-form">
+                    <h1>SignUp</h1>
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button>SignUp</button>
+                    <p class="message">Already an account? <a href="#">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

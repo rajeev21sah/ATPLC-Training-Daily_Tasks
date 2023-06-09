@@ -1,19 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+
+<html>
 
 <head>
-    <title>Task_13</title>
-    <script>
-        var x = "hello";
-        var y = "world";
+    <title> Task-14.3 </title>
 
-        var result = x.toUpperCase() + " " + y.toUpperCase();
-        document.write(result);
-    </script>
 </head>
+<h2> Console.log method </h2>
 
 <body>
+    <script>
 
+        function fibonacci(num) {
+            let fibSeries = [];
+            fibSeries[0] = 0;
+            fibSeries[1] = 1;
+
+            for (let i = 2; i < num; i++) {
+                fibSeries[i] = fibSeries[i - 1] + fibSeries[i - 2];
+            }
+
+            return fibSeries;
+        }
+
+        const num = prompt("Enter the number of terms in the Fibonacci series :");
+
+        const fibSeries = fibonacci(num);
+
+        console.log("Fibonacci series upto" + num + "terms:" + fibSeries);
+
+
+
+
+    </script>
 </body>
 
 </html>
